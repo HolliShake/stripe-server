@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const stripe = require('./stripe')
 
-router.post('/', async (req, res) => {
+router.post('/webhook', async (req, res) => {
     let data, eventType;
 
     // Check if webhook signing is configured.

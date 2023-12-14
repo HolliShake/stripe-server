@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const stripe = require('./stripe')
 
-router.post('/', async (req, res) => {
+router.post('/create-payment-intent', async (req, res) => {
     // Create a PaymentIntent with the amount, currency, and a payment method type.
     //
     // See the documentation [0] for the full list of supported parameters.
