@@ -2,10 +2,10 @@
   "name": "stripe",
   "version": "1.0.0",
   "description": "Stripe server for joblynx",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
