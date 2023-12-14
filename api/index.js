@@ -17,7 +17,7 @@ const stripe = require('stripe')(process.env.VITE_APP_STRIPE_SECRET_KEY, {
 app.use(cors())
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.get('/welcome', async (req, res) => {
   return res.json({ message: 'Welcome to stripe api!!!' })
 })
 
